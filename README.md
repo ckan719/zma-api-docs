@@ -1071,6 +1071,7 @@ Tạo một khách hàng mới trong hệ thống.
     "province_code": "01",
     "ward_code": "00101",
     "dob": "1990-01-15",
+    "yob": 1990,
     "gender": "male"
 }
 ```
@@ -1089,6 +1090,7 @@ Tạo một khách hàng mới trong hệ thống.
 | `province_code` | string | No | Mã tỉnh/thành phố |
 | `ward_code` | string | No | Mã phường/xã |
 | `dob` | string | No | Ngày sinh (định dạng: YYYY-MM-DD) |
+| `yob` | integer | No | Năm sinh (4 chữ số, ví dụ: 1990) |
 | `gender` | string | No | Giới tính |
 
 #### Response Example (Success - 201 Created)
@@ -1109,6 +1111,7 @@ Tạo một khách hàng mới trong hệ thống.
         "province_code": "01",
         "ward_code": "00101",
         "dob": "1990-01-15",
+        "yob": 1990,
         "gender": "male",
         "created_at": "2024-01-01T00:00:00.000000Z",
         "updated_at": "2024-01-01T00:00:00.000000Z"
@@ -1219,6 +1222,7 @@ Cập nhật thông tin của một khách hàng.
     "identity_id": "123456789012",
     "channel": "zalo_updated",
     "dob": "1990-01-15",
+    "yob": 1990,
     "gender": "male"
 }
 ```
@@ -1235,6 +1239,7 @@ Cập nhật thông tin của một khách hàng.
 | `identity_id` | string | Yes | Zalo ID (tối đa 50 ký tự, phải unique) |
 | `channel` | string | Yes | Kênh đăng ký (tối đa 100 ký tự) |
 | `dob` | string | No | Ngày sinh (định dạng: YYYY-MM-DD) |
+| `yob` | integer | No | Năm sinh (4 chữ số, ví dụ: 1990) |
 | `gender` | string | No | Giới tính |
 
 #### Response Example (Success - 200 OK)
@@ -1255,6 +1260,7 @@ Cập nhật thông tin của một khách hàng.
         "province_code": "01",
         "ward_code": "00101",
         "dob": "1990-01-15",
+        "yob": 1990,
         "gender": "male",
         "created_at": "2024-01-01T00:00:00.000000Z",
         "updated_at": "2024-01-15T10:30:00.000000Z"
